@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 
 declare global {
@@ -8,7 +8,7 @@ declare global {
     }
 }
 
-export default function Home() {
+export function HomeContent() {
     const searchParams = useSearchParams()
     const params = searchParams.toString()
     const [state, setState] = useState({
@@ -85,5 +85,13 @@ export default function Home() {
                 </footer>
             </div>
         </div>
+    )
+}
+
+export default function Home() {
+    return (
+        <Suspense>
+            <HomeContent />
+        </Suspense>
     )
 }
