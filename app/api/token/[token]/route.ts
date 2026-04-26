@@ -3,11 +3,11 @@ import { createBot } from "../../../../utils/multibots"
 
 export async function POST(
     request: Request,
-    { params }: { params: { token: string } }
+    { params }: { params: Promise<{ token: string }> }
 ) {
-    const token = params.token // 'a', 'b', or 'c'
+    const { token } = await params
     try {
-        const bot = await createBot(token as string)
+        const bot = await createBot(token)
         if (bot) {
             const body = await request.json()
             await bot.handleUpdate(body).catch(e => logger.error(e))
