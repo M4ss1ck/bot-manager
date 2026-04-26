@@ -1,27 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --telegram-bg-color: var(--tg-theme-bg-color, #ffffff);
-    --telegram-text-color: var(--tg-theme-text-color, #000000);
-    --telegram-hint-color: var(--tg-theme-hint-color, #707579);
-    --telegram-link-color: var(--tg-theme-link-color, #3390ec);
-    --telegram-button-color: var(--tg-theme-button-color, #3390ec);
-    --telegram-button-text-color: var(--tg-theme-button-text-color, #ffffff);
-    --telegram-secondary-bg-color: var(--tg-theme-secondary-bg-color, #f4f4f5);
-  }
+@theme {
+    --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "Roboto Mono", ui-monospace, monospace;
 
-  html {
-    @apply font-sans;
-  }
+    --color-telegram-bg: var(--tg-theme-bg-color, #ffffff);
+    --color-telegram-text: var(--tg-theme-text-color, #000000);
+    --color-telegram-hint: var(--tg-theme-hint-color, #707579);
+    --color-telegram-link: var(--tg-theme-link-color, #3390ec);
+    --color-telegram-button: var(--tg-theme-button-color, #3390ec);
+    --color-telegram-button-text: var(--tg-theme-button-text-color, #ffffff);
+    --color-telegram-secondary-bg: var(--tg-theme-secondary-bg-color, #f4f4f5);
+}
+
+html {
+    font-family: var(--font-sans);
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
 }
