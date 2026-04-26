@@ -15,8 +15,6 @@
     "prisma": "yarn prisma-generate && yarn prisma-push"
   },
   "dependencies": {
-    "@fontsource/roboto": "^4.5.8",
-    "@fontsource/roboto-mono": "^4.5.8",
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "@types/node": "^25.6.0",
@@ -27,7 +25,6 @@
     "next": "^16.2.4",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-turnstile": "^1.0.6",
     "request-ip": "^3.3.0",
     "signale": "^1.4.0",
     "telegraf": "^4.11.2",
