@@ -17,7 +17,8 @@
   "dependencies": {
     "@fontsource/roboto": "^4.5.8",
     "@fontsource/roboto-mono": "^4.5.8",
-    "@prisma/client": "^5.19.1",
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
@@ -30,15 +31,17 @@
     "request-ip": "^3.3.0",
     "signale": "^1.4.0",
     "telegraf": "^4.11.2",
+    "pg": "^8.20.0",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
     "@types/request-ip": "^0.0.37",
     "@types/signale": "^1.4.4",
     "autoprefixer": "^10.4.13",
+    "dotenv": "^17.2.3",
     "eslint-config-next": "^16.2.4",
     "postcss": "^8.4.19",
-    "prisma": "^5.19.1",
+    "prisma": "^7.8.0",
     "tailwindcss": "^3.2.4"
   }
 }
